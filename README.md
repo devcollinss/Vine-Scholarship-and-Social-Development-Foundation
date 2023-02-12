@@ -16,7 +16,7 @@ This is the repository for the official website of a charity organization aimed 
 
 ### 1. Clone the repository to your server:
 
-git clone https://github.com/[username]/charity-organization-website.git
+> git clone https://github.com/Christroa/Vine-Scholarship-and-Social-Development-Foundation.git
 
 
 ### 3. Create a new MySQL database and import the db.sql file.
