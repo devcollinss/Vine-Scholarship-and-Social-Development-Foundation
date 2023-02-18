@@ -3,6 +3,8 @@
 
 This is the repository for the official website of a charity organization aimed at improving the lives of people in need. The website is designed to provide information about the organization, its mission, and ways to get involved and help.
 
+
+
 ## Requirements
 
 - A web server with Nodejs, PHP and MySQL
@@ -12,7 +14,8 @@ This is the repository for the official website of a charity organization aimed 
 - Installation
 
 
-### To install the website on your own server, follow these steps:
+
+## To install the website on your own server, follow these steps:
 
 ### 1. Clone the repository to your server:
 
@@ -27,6 +30,8 @@ This is the repository for the official website of a charity organization aimed 
 
 ### 6. Open the website in your web browser.
 
+
+
 ## Contributing
 
 We welcome contributions to the website. To contribute, please follow these steps:
@@ -36,6 +41,8 @@ We welcome contributions to the website. To contribute, please follow these step
 - Make your changes.
 
 - Submit a pull request.
+
+
 
 ## License
 

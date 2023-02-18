@@ -1,0 +1,136 @@
+@import './colors';
+
+.hamburger {
+    width: 50px;
+    height: 50px;
+    // background: #000;
+    position: absolute;
+    right: 100px;
+    cursor: pointer;
+    display: none;
+    svg {
+        width: 50px;
+        height: 50px;
+    }
+
+
+    &:hover {
+        
+        color: #fff000;
+    }
+}
+
+.navbar {
+    position: relative;
+    background: #ffffff;
+    height: 200px;
+    display: grid;
+    grid-template-columns: 70px 1fr;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    padding: 0 150px;
+    // box-shadow: 0 0px 25px rgba(0, 0, 0, 0.3);
+
+    .logo {
+        img {
+            width: 70px;
+            height: 70px;
+            background: #fff;
+        }
+    }
+
+    .navLinks {
+        display: flex;
+        justify-content: right;
+        align-items: center;
+        // gap: 10px;
+        gap: 20px;
+        // background-color: #000;
+        // width: 100%;
+        .navLink {
+            a {
+                font-size: 18px;
+                color: #000;
+
+                &:hover {
+                    color: $secondaryColor;
+                }
+            }
+        }
+
+        .btn-group {
+            margin-left: 70px;
+            display: flex;
+            gap: 10px;
+            button {
+                border-radius: 5px;
+                padding: 15px 30px;
+                font-size: 14px;
+                font-weight: 600;
+                
+                &:hover {
+                    background: $primaryColor;
+                    color: #ffffff
+                }
+                
+                &:last-child{
+                    background: $primaryColor;
+                    color: #ffffff;
+    
+                    &:hover {
+                        background: #ffffff;
+                        color: $primaryColor;
+                        border: 1px solid;
+                    }
+                }
+    
+            }
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+        padding: 0 100px;
+        background-color: #fff000;
+        position: relative;
+        height: 150px;
+
+        .hamburger {
+            display: block;
+        }
+        
+        .navLinks {
+            position: absolute;
+            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 30px;
+            background-color: #ffff;
+            height: calc(100vh - 150px);
+            top: 150px;
+            // display: none;
+            transform: translateX(-130%);
+            transition: transform .5s ease-in-out;
+            width: 70%;
+            padding: 50px;
+            
+            &.show {
+            // display: flex !important;
+            transform: translateX(0) !important;
+        }
+           
+            
+
+            .btn-group {
+                margin: 20px 0;
+                gap: 20px;
+            }
+
+           
+        }
+    }
+    @media screen and (max-width: 480px) {
+
+    }
+     
+}
